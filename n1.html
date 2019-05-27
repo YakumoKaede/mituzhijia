@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <script src="EasyUI/jquery-1.8.3.min.js"></script>
+    <script src="EasyUI/jquery.easyui.min.js"></script>
+    <link href="EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="EasyUI/themes/metro/easyui.css" rel="stylesheet" />
+</head>
+<body>
+<script type="text/javascript">
+        $(function () {
+            $("#cc").combobox({
+                required: true,
+                multiple: true,
+                valueField: 'id',
+                textField: 'text',
+                data: datacome
+            });
+        })
+        var datacome = [
+               {
+                   "id": 0,
+                   "text": "第一次尝试"
+               },
+               {
+                   "id": 1,
+                   "text": "python"
+               },
+               {
+                   "id": 2,
+                   "text": "结合"
+               },
+               {
+                   "id": 3,
+                   "text": "easyui"
+               },
+               {
+                   "id": 4,
+                   "text": "1"
+               }
+        ]
+    </script>
+    <input id="cc" />
+</body>
+</html>
